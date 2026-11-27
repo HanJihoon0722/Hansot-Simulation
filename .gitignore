@@ -136,3 +136,6 @@ crashlytics-build.properties
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# Python cache from skill scripts
+__pycache__/
