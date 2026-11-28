@@ -1,6 +1,6 @@
-# 도시락집 시뮬 — 아트 스타일 가이드 (AI 모델링용)
+# 도시락집 시뮬 아트 스타일 가이드 (AI 모델링용)
 
-Nov 28, 2026 · @한지훈
+Nov 28, 2026 / @한지훈
 
 > 상태: **초안 v0.1.** `[초안]` 표시가 붙은 수치는 레퍼런스에서 추정한 시작값입니다. 기준 소품 테스트(`References/Tests/`) 후 확정하고 표시를 지웁니다.
 
@@ -153,7 +153,7 @@ text, logo, brand name, watermark, cartoon, toon, low detail blob, baked shadows
 baked highlights, rust, heavy grime, multiple objects, base platform, ground plane
 ```
 
-### 폴리곤·텍스처 예산
+### 폴리곤과 텍스처 예산
 
 `[초안]` 1인칭에서 가까이 보는 순서대로 예산을 크게 준다.
 
@@ -170,11 +170,11 @@ baked highlights, rust, heavy grime, multiple objects, base platform, ground pla
 - [ ] 크기를 실제 미터 단위로 맞춘다 (도시락 용기 약 20×15×5cm)
 - [ ] 피벗을 바닥 중앙에 둔다
 - [ ] UV를 다시 펴고 텍셀 밀도를 맞춘다
-- [ ] 구워진 그림자·하이라이트를 텍스처에서 지운다
+- [ ] 구워진 그림자와 하이라이트를 텍스처에서 지운다
 - [ ] 텍스처 색을 팔레트 범위로 보정한다
-- [ ] Roughness·Metallic을 재질 표 범위로 맞춘다
+- [ ] Roughness와 Metallic을 재질 표 범위로 맞춘다
 - [ ] 날카로운 모서리에 Bevel을 넣는다
-- [ ] 내부에 박힌 면·구멍·뒤집힌 노멀을 고친다
+- [ ] 내부에 박힌 면, 구멍, 뒤집힌 노멀을 고친다
 - [ ] 상호작용이 필요하면 콜라이더용 단순 메시를 만든다
 
 ## 에셋 스펙과 네이밍
@@ -182,13 +182,13 @@ baked highlights, rust, heavy grime, multiple objects, base platform, ground pla
 | 카테고리 | 접두어 | 등급 | 예시 | 폴더 |
 | --- | --- | --- | --- | --- |
 | 음식 | SM_Food_ | A | `SM_Food_PorkCutlet` | `Assets/05. Art/Models/Food/` |
-| 용기·포장 | SM_Pack_ | A | `SM_Pack_Lunchbox6Slot` | `Assets/05. Art/Models/Packaging/` |
+| 용기와 포장 | SM_Pack_ | A | `SM_Pack_Lunchbox6Slot` | `Assets/05. Art/Models/Packaging/` |
 | 주방 도구 | SM_Tool_ | A | `SM_Tool_RicePaddle` | `Assets/05. Art/Models/Tools/` |
 | 주방 기기 | SM_Equip_ | B | `SM_Equip_RiceCooker` | `Assets/05. Art/Models/Equipment/` |
 | 가구 | SM_Furn_ | C | `SM_Furn_WorkTable` | `Assets/05. Art/Models/Furniture/` |
-| 건물·환경 | SM_Env_ | C/D | `SM_Env_WallPanel` | `Assets/05. Art/Models/Environment/` |
-| 캐릭터 | SK_Char_ | — | `SK_Char_Customer01` | `Assets/05. Art/Models/Characters/` |
-| 콜라이더 메시 | UCX_ | — | `UCX_SM_Equip_RiceCooker` | 원본 모델과 같은 폴더 |
+| 건물과 환경 | SM_Env_ | C/D | `SM_Env_WallPanel` | `Assets/05. Art/Models/Environment/` |
+| 캐릭터 | SK_Char_ | 없음 | `SK_Char_Customer01` | `Assets/05. Art/Models/Characters/` |
+| 콜라이더 메시 | UCX_ | 없음 | `UCX_SM_Equip_RiceCooker` | 원본 모델과 같은 폴더 |
 
 파일 규칙:
 
@@ -201,7 +201,7 @@ baked highlights, rust, heavy grime, multiple objects, base platform, ground pla
 
 ## 검수 절차
 
-기준 씬: `Assets/04. Scenes/Dev/LookDev.unity` — 크림 화이트 벽, 웜 그레이 타일 바닥, 스테인리스 작업대, 기준 조명 프리셋과 VP_Global, 기준 소품(첫 번째는 밥솥), 크기 비교용 1m 큐브와 컬러 체커
+기준 씬: `Assets/04. Scenes/Dev/LookDev.unity`. 구성은 크림 화이트 벽, 웜 그레이 타일 바닥, 스테인리스 작업대, 기준 조명 프리셋과 VP_Global, 기준 소품(첫 번째는 밥솥), 크기 비교용 1m 큐브와 컬러 체커
 
 1. 새 에셋을 기준 소품 옆 작업대 위에 둔다 (바닥 중앙 피벗이라 그대로 올라감)
 2. 고정 카메라 3개로 찍는다. 1인칭 눈높이 1.65m에서 작업대를 내려다보는 시점, 같은 높이 정면, 30cm 근접
