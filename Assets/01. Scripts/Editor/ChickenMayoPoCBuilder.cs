@@ -116,6 +116,8 @@ namespace Dosirak.EditorTools
         {
             var input = AssetDatabase.LoadAssetAtPath<InputActionAsset>(InputPath);
             var player = new GameObject("Player");
+            // 시선 레이캐스트가 플레이어 자신의 충돌체에 맞지 않도록 한다.
+            player.layer = LayerMask.NameToLayer("Ignore Raycast");
             player.transform.position = new Vector3(0f, 0f, -1f);
             var characterController = player.AddComponent<CharacterController>();
             characterController.height = 1.8f;
