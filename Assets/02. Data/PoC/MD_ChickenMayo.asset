@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f221773aebd551f4fb0b1e016618a580, type: 3}
+  m_Name: MD_ChickenMayo
+  m_EditorClassIdentifier: Assembly-CSharp::Dosirak.Data.MenuData
+  displayName: "\uCE58\uD0A8\uB9C8\uC694"
+  steps:
+  - {fileID: 11400000, guid: 65dde44c43dceef4eade6332ba738765, type: 2}
+  - {fileID: 11400000, guid: 6d8a5a5cd22508e45a7b19a69ba15fd6, type: 2}
+  - {fileID: 11400000, guid: d05c1f6f938271545a20e94db5582366, type: 2}
+  - {fileID: 11400000, guid: 27c88c70a6010b445b0590f8786b8b1a, type: 2}
+  - {fileID: 11400000, guid: 674394c0957ceb94eb3b53c6854ab2b3, type: 2}
+  packaging:
+  - item: {fileID: 11400000, guid: 01f3671353b99a745a18162a966052a7, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 29edd40f4ed17a34fb27f1c8f8f3781c, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 9e1120e513435e74a8fedf5ea326d9d7, type: 2}
+    count: 1
